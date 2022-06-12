@@ -20,6 +20,10 @@
 
   header {
     font-size: 12vh;
+  
+    font-weight: 900;
+
+    font-stretch:extra-expanded;
     background-color: black;
     color:white;
   }
