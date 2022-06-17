@@ -4,7 +4,8 @@
     padding: 0;
     box-sizing: border-box;
   }
-  body {
+ 
+  .container{
     background: linear-gradient(120deg, rgb(0, 217, 255), rgb(68, 255, 0));
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -28,15 +29,15 @@
     color:white;
   }
   .submit{
-    border-radius: 10px;
+    border-radius: 1.4vh;
   }
   
   form input,
   form button {
-    padding: 10px;
-    margin: 20px;
+    padding: 1vh;
+    margin: 2vh;
     border: none;
-    font-size: 24px;
+    font-size: 3vh;
     background: rgb(7, 5, 5);
     COLOR:white;
     outline: none;
@@ -61,15 +62,15 @@
     list-style: none;
   }
   .todo {
-    margin: 8px;
-    font-size: 24px;
+    margin: 1.1;
+    font-size: 3.3vh;
     background: white;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5px;
-    border-radius: 10px;
+    padding: .7vh .7vh;
+    border-radius: 1.4vh;
   }
   .todo li {
     flex: 1;
@@ -79,23 +80,23 @@
     background-color: darkseagreen;
     color: white;
     border: none;
-    padding: 18px;
+    padding: 2.52vh;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 2.24vh;
     outline: none;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 2.8vh;
   }
   .delete-btn {
     background-color: deeppink;
-    font-size:18px !important;
+    font-size:2.24vh !important;
     border-radius: 50%;
   }
   .plus-btn{
     background-color: burlywood;
   }
   .todo-item1 ,.todo-item2,.todo-item3,.todo-item4{
-    margin: 0 8px;
+    margin: 0 1.1vh;
   }
   
   .fa-trash,
@@ -107,6 +108,6 @@
     opacity: 0.5;
   }
   input{
-    border-radius:10px;
+    border-radius:1.4vh;
     border-color: rosybrown;
   }
