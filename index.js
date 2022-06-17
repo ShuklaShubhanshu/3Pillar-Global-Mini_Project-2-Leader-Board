@@ -62,7 +62,7 @@ function create(e) {
     score.value="";
 
   } else {
-    alert("Input Field Can't Be Blank");
+    alert("Please enter all entries.");
   }
 }
 
