@@ -62,7 +62,7 @@ function create(e) {
     score.value="";
 
   } else {
-    alert("Please enter all entries.");
+    alert("Please enter all entries. ");
   }
 }
 
