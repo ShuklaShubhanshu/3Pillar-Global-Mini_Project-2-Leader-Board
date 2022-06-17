@@ -12,7 +12,7 @@ todolist.onclick = deletecheck;
 var co;
 //Functions
 function create(e) {
-  if (todoInput.value != "") {
+  if (todoInput.value != "" && lname.value!="" &&country.value!=""&&score.value!="") {
     e.preventDefault();
 
     var newDiv = document.createElement("div");
@@ -23,6 +23,7 @@ function create(e) {
     newLi.innerHTML = todoInput.value;
     newDiv.appendChild(newLi);
     
+    
     var newLi1 = document.createElement("li");
     newLi1.classList.add("todo-item2");
     newLi1.innerHTML = lname.value;
@@ -32,7 +33,7 @@ function create(e) {
     newLi2.classList.add("todo-item3");
     newLi2.innerHTML = country.value;
     newDiv.appendChild(newLi2);
-
+    
     var newLi3 = document.createElement("li");
     newLi3.classList.add("todo-item4");
     co=score.value;
