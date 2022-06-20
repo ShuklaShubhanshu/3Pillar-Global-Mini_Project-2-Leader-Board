@@ -9,6 +9,7 @@ var todolist = document.querySelector(".todo-list");
 //Event Handlers
 btn.onclick = create;
 todolist.onclick = deletecheck;
+
 var co;
 //Functions
 function create(e) {
@@ -27,7 +28,7 @@ function create(e) {
     var newLi1 = document.createElement("li");
     newLi1.classList.add("todo-item2");
     newLi1.innerHTML = lname.value;
-    newDiv.appendChild(newLi1);
+    newLi.appendChild(newLi1);
 
     var newLi2 = document.createElement("li");
     newLi2.classList.add("todo-item3");
@@ -62,12 +63,14 @@ function create(e) {
     score.value="";
 
   } else {
-    alert("Please enter all entries. ");
+    alert("Input Field Can't Be Blank");
   }
 }
 
 function deletecheck(e) {
+
   var item = e.target;
+  console.log("item   "+item);
 
   if (item.classList[0] === "delete-btn") {
     var parent = item.parentElement;
@@ -76,13 +79,16 @@ function deletecheck(e) {
 
   if (item.classList[0] === "plus-btn") {
     const val=item.parentElement.querySelector(".todo .todo-item4");
+    co=val.innerHTML;
     co=parseInt(co)+5;
      val.innerHTML=co;
+
      
   }
 
   if (item.classList[0] === "minus-btn") {
     const val=item.parentElement.querySelector(".todo .todo-item4");
+    co=val.innerHTML;
     co=parseInt(co)-5;
     if(parseInt(co)>0){
      val.innerHTML=co;
@@ -90,6 +96,6 @@ function deletecheck(e) {
     else{
       val.innerHTML=0;
     }
+   
   }
 }
-
