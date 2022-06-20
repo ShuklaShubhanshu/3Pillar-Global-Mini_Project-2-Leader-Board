@@ -9,7 +9,7 @@ var todolist = document.querySelector(".todo-list");
 //Event Handlers
 btn.onclick = create;
 todolist.onclick = deletecheck;
-
+var temp=0;
 var co;
 //Functions
 function create(e) {
